@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export const Cont = styled.div`
   display: flex;
-  margin-top: 25px;
+  margin-top: 0;
   margin-bottom: 50px;
+
+  width: 100%;
+  max-height: 500px;
 
   > img {
     max-width: 100%;
@@ -15,7 +17,7 @@ export const Cont = styled.div`
 const Banner = () => {
   return (
     <Cont>
-        <img src={`banner.png`} alt="Banner" />
+        <img src={`Banner.png`} alt="Banner" />
     </Cont>
   );
 };
