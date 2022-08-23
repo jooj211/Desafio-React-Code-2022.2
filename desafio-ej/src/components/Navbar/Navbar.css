@@ -1,10 +1,16 @@
+
 .navbar-items {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background: maroon;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 i {
@@ -41,7 +47,7 @@ i {
 }
 
 .nav-links:hover {
-    background-color: #6d76f7;
+    background-color: crimson;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
@@ -82,6 +88,7 @@ i {
         opacity: 1;
         transition: all 0.5 ease;
         z-index: 1;
+        padding-top: 30px;
     }
 
     .nav-links{
@@ -92,7 +99,7 @@ i {
     }
 
     .nav-links:hover {
-        background-color: #7577fa;
+        background-color: crimson;
         border-radius: 0;
     }
 
