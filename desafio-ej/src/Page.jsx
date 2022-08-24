@@ -1,30 +1,13 @@
 import React from 'react';
-import styled from "styled-components";
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 import Membros from './pages/Membros';
 import Login from './pages/Login';
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import './Page.css';
 
-
-const Footer = styled.div`
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: maroon;
-    width: 100%;
-    height: 100px;
-    position: absolute;
-
- 	> span {
-    color: white;
-    font-size: 1rem;
-    padding: 1rem;
-	text-align: center;
-	}
-`;
 
 class Page extends React.Component {
     constructor() {
