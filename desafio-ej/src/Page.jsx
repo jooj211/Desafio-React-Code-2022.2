@@ -1,9 +1,9 @@
 import React from 'react';
-import Home from './pages/Home';
-import Sobre from './pages/Sobre';
-import Contato from './pages/Contato';
-import Membros from './pages/Membros';
-import Login from './pages/Login';
+import Home from './pages/Home.jsx';
+import Sobre from './pages/Sobre.jsx';
+import Membros from './pages/Membros.js';
+import Login from './pages/Login/Login.js';
+import Admin from './pages/Admin';
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import './Page.css';
@@ -16,9 +16,9 @@ class Page extends React.Component {
         this.state = {
           home: true,
           sobre: false,
-          contato: false,
           membros: false,
-          login: false
+          login: false,
+          admin: false
         }
       }
 
@@ -28,41 +28,41 @@ class Page extends React.Component {
           this.setState({
             home: true,
             sobre: false,
-            contato: false,
             membros: false,
-            login: false
+            login: false,
+            admin: false
           })
         } else if (window.location.pathname === '/sobre') {
           this.setState({
             home: false,
             sobre: true,
-            contato: false,
             membros: false,
-            login: false
-          })
-        } else if (window.location.pathname === '/contato') {
-          this.setState({
-            home: false,
-            sobre: false,
-            contato: true,
-            membros: false,
-            login: false
+            login: false,
+            admin: false
           })
         } else if (window.location.pathname === '/membros') {
           this.setState({
             home: false,
             sobre: false,
-            contato: false,
             membros: true,
-            login: false
+            login: false,
+            admin: false
           })
         } else if (window.location.pathname === '/login') {
           this.setState({
             home: false,
             sobre: false,
-            contato: false,
             membros: false,
-            login: true
+            login: true,
+            admin: false
+          })
+        } else if (window.location.pathname === '/admin') {
+          this.setState({
+            home: false,
+            sobre: false,
+            membros: false,
+            login: false,
+            admin: true
           })
         }
       }
@@ -72,12 +72,19 @@ class Page extends React.Component {
             <>
             <Navbar />
 
-            <div className="container">
-              { this.state.home && <Home /> }
-              { this.state.sobre && <Sobre /> }
-              { this.state.contato && <Contato /> }
-              { this.state.membros && <Membros /> }
-              { this.state.login && <Login /> }
+            <div className="container-page">
+              
+              { 
+              this.state.home ? <Home /> :
+              this.state.sobre ? <Sobre /> :
+              this.state.membros ? <Membros /> : 
+              this.state.login ? <Login /> : 
+              this.state.admin ? <Admin /> : 
+              null 
+              }
+
+              {/* <Membros /> */}
+
             </div>
 
             <Footer />

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 import './Footer.css';
 
-const FooterChild = styled.div`
+const Footer = styled.div`
     bottom: 0;
     right: 0;
     left: 0;
@@ -10,7 +10,7 @@ const FooterChild = styled.div`
     width: 100%;
     height: 100px;
     margin-top: auto;
-    position: absolute;
+    position: relative;
     z-index: 0;
 
  	> span {
@@ -20,16 +20,6 @@ const FooterChild = styled.div`
 	text-align: center;
 	}
 `;
-
-class Footer extends React.Component {
-    render() {
-        return(
-            <div className="container">
-                <FooterChild/>
-            </div>
-        )
-    }
-}
 
 
 export default Footer;
