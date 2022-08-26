@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import jpIMG from "./assets/jp.svg";
+import logoSVG from "./assets/logo_svg.svg";
 import "./styles.css";
 
 function Login() {
@@ -14,7 +14,7 @@ function Login() {
             <span className="login-form-title"> Bem-vindo! </span>
 
             <span className="login-form-title">
-              <img src={jpIMG} alt="Jovem Programador" />
+              <img src={logoSVG} alt="Cine Jr" />
             </span>
 
             <div className="wrap-input">

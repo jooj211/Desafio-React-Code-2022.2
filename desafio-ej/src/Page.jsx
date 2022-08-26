@@ -74,7 +74,7 @@ class Page extends React.Component {
             <Navbar />
 
             <div className="container-page">
-              
+
               { 
               this.state.home ? <Home /> :
               this.state.sobre ? <Sobre /> :
@@ -83,8 +83,6 @@ class Page extends React.Component {
               this.state.admin ? <Admin /> : 
               null 
               }
-
-              {/* <Membros /> */}
 
             </div>
 

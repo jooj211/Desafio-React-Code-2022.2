@@ -1,7 +1,28 @@
-.member-card {
-    text-align: center;
-}
 
 h1 {
     text-align: center;
+}
+
+.member-container {
+    padding-top: 20px;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+}
+
+.member-card span {
+    padding: 10px 0;
+}
+
+.member-card img {
+    max-width: 180px;
+}
+
+.card-container {
+    padding: 0;
 }

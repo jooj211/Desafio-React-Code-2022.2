@@ -19,4 +19,9 @@ export const MembersList = [
         imagePath: "juliana.png",
         cName: 'member-card'
     },
+    {
+        name: 'Augusto César',
+        imagePath: "juliana.png",
+        cName: 'member-card'
+    },
 ]
