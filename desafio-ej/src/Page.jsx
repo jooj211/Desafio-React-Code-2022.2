@@ -24,15 +24,7 @@ class Page extends React.Component {
 
       /* if {window.location.pathname} is equal to one of the states, turn all the others to false and the state of the pathname to true */
       componentDidMount() {
-        if (window.location.pathname === '') {
-          this.setState({
-            home: true,
-            sobre: false,
-            membros: false,
-            login: false,
-            admin: false
-          })
-        } else if (window.location.pathname === '/sobre') {
+        if (window.location.pathname === '/sobre') {
           this.setState({
             home: false,
             sobre: true,
@@ -63,6 +55,15 @@ class Page extends React.Component {
             membros: false,
             login: false,
             admin: true
+          })
+        }
+        else {
+          this.setState({
+            home: true,
+            sobre: false,
+            membros: false,
+            login: false,
+            admin: false
           })
         }
       }

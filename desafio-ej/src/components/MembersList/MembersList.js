@@ -1,7 +1,7 @@
 export const MembersList = [
     {
         name: 'Robson Silva',
-        imagePath: 'robson.png',
+        imagePath: "robson.png",
         cName: 'member-card'
     },
     {
@@ -11,12 +11,12 @@ export const MembersList = [
     },
     {
         name: 'Márcio Martins',
-        imagePath: 'marcio.png',
+        imagePath: "marcio.png",
         cName: 'member-card'
     },
     {
         name: 'Juliana Dias',
-        imagePath: 'juliana.png',
+        imagePath: "juliana.png",
         cName: 'member-card'
     },
 ]
