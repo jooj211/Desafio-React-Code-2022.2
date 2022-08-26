@@ -1,9 +1,9 @@
 import React from "react";
-import '../styles/Membros.css';
+import '../styles/Members.css';
 import { MembersList } from '../components/MembersList/MembersList';
 import Grid from "@material-ui/core/Grid";
 
-class Membros extends React.Component {
+class Members extends React.Component {
     render() {
       return (
         <div className="member-container">
@@ -26,4 +26,4 @@ class Membros extends React.Component {
     }
 }
 
-export default Membros;
+export default Members;

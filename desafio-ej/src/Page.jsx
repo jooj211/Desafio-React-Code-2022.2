@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './pages/Home.jsx';
 import Sobre from './pages/Sobre.jsx';
-import Membros from './pages/Membros.js';
+import Members from './pages/Members.js'
 import Login from './pages/Login/Login.js';
 import Admin from './pages/Admin';
 import Navbar from "./components/Navbar/Navbar";
@@ -14,9 +14,9 @@ class Page extends React.Component {
         super();
         
         this.state = {
-          home: true,
+          home: false,
           sobre: false,
-          membros: false,
+          members: false,
           login: false,
           admin: false
         }
@@ -28,15 +28,15 @@ class Page extends React.Component {
           this.setState({
             home: false,
             sobre: true,
-            membros: false,
+            members: false,
             login: false,
             admin: false
           })
-        } else if (window.location.pathname === '/membros') {
+        } else if (window.location.pathname === '/members') {
           this.setState({
             home: false,
             sobre: false,
-            membros: true,
+            members: true,
             login: false,
             admin: false
           })
@@ -44,7 +44,7 @@ class Page extends React.Component {
           this.setState({
             home: false,
             sobre: false,
-            membros: false,
+            members: false,
             login: true,
             admin: false
           })
@@ -52,7 +52,7 @@ class Page extends React.Component {
           this.setState({
             home: false,
             sobre: false,
-            membros: false,
+            members: false,
             login: false,
             admin: true
           })
@@ -61,7 +61,7 @@ class Page extends React.Component {
           this.setState({
             home: true,
             sobre: false,
-            membros: false,
+            members: false,
             login: false,
             admin: false
           })
@@ -78,7 +78,7 @@ class Page extends React.Component {
               { 
               this.state.home ? <Home /> :
               this.state.sobre ? <Sobre /> :
-              this.state.membros ? <Membros /> : 
+              this.state.members ? <Members /> : 
               this.state.login ? <Login /> : 
               this.state.admin ? <Admin /> : 
               null 
