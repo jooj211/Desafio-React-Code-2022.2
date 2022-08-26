@@ -28,7 +28,9 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <a href="login"><Button href="login">Login</Button></a>
+                <div className='nav-btn'>
+                    <a href="login"><Button href="login" id="btn-login">Login</Button></a>
+                </div>
             </nav>
         );
     }

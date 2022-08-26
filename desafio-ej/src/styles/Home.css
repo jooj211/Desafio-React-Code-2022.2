@@ -23,11 +23,6 @@
 }
 
 .grid-intro p, .grid-info p {
-    width: 583.91px;
-    height: 134.13px;
-    left: 80.75px;
-    top: 343.92px;
-
     font-family: 'GT Walsheim Pro';
     font-style: normal;
     font-weight: 500;
@@ -41,9 +36,58 @@
 
 .grid-intro img, .grid-info img {
     max-width: 300px;
+    max-height: 300px;
+    margin: 15px 30px;
+    align-items: center;
+    text-align: center;
 }
 
 .grid-intro, .grid-info {
     display: flex;
     flex-direction: row;
+    padding: 80px 125px;
+}
+
+.grid-info button {
+    background: linear-gradient(238.41deg, #09153F 1.24%, #002BC2 57.38%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 2px;
+    cursor: pointer;
+
+
+}
+
+/* at md screens */
+@media (max-width: 768px) {
+    .grid-intro, .grid-info {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .grid-intro h1, .grid-info h1 {
+        text-align: center;
+    }
+
+    .grid-intro img, .grid-info img {
+        max-width: 300px;
+        max-height: 300px;
+        padding: 0 30px;
+        margin: 15px 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-info {
+        margin: 0 auto;
+        display: contents;
+    }
 }

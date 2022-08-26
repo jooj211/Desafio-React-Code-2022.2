@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 import "../styles/Home.css";
 
 class Home extends React.Component {
@@ -20,6 +21,7 @@ class Home extends React.Component {
                         <div className="info">
                             <h1>Conheça o nosso projeto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant cras morbi hendrerit nunc vel sapien. In habitasse at diam suspendisse non vitae fermentum, pharetra arcu. Viverra a morbi ut donec in. Ac diam, at sed cras nisi. </p>
+                            <a href="sobre"><button href="sobre" id="btn-about">Saiba Mais</button></a>
                         </div>
                     </Grid>
                 </Grid>
