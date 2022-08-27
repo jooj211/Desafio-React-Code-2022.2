@@ -56,8 +56,7 @@ class Page extends React.Component {
             login: false,
             admin: true
           })
-        }
-        else {
+        } else {
           this.setState({
             home: true,
             sobre: false,

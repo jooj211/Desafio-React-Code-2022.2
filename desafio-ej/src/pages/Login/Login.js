@@ -38,7 +38,7 @@ function Login() {
             </div>
 
             <div className="container-login-form-btn">
-              <button className="login-form-btn">Login</button>
+              <a href="admin" className="login-form-btn" style={{width: "100%", textDecoration: "none"}}>Login</a>
             </div>
           </form>
         </div>
@@ -48,3 +48,8 @@ function Login() {
 }
 
 export default Login;
+
+/*
+* Q: Why doesn't the login button go to the admin page?
+* A: Because the button is not a link, it's a button. You need to use the <a> tag to make it a link. 
+*/
