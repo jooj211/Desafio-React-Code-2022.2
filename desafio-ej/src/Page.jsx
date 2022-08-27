@@ -86,7 +86,7 @@ class Page extends React.Component {
 
             </div>
 
-            {/* <Footer /> */}
+            <Footer />
             </>
         )
       }

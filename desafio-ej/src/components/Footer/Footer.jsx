@@ -10,7 +10,7 @@ const Footer = styled.div`
     width: 100%;
     height: 100px;
     margin-top: auto;
-    position: absolute;
+    position: relative;
     z-index: 0;
 
  	> span {
