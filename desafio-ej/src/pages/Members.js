@@ -14,7 +14,10 @@ class Members extends React.Component {
             {MembersList.map((item, index) => {
               return (
                 <Grid item xs={12} sm={6} md={4}>
-                  <Card style={{ width: '18rem' }}>
+                  <Card 
+                  style={{ 
+                    width: window.innerWidth >= 1030 ? '18rem' : (window.innerWidth >= 675 ? '17rem' : '15rem'),
+                  }}>
                     <Card.Img variant="top" src={item.imagePath} />
                       <Card.Body>
                         <Card.Title>{item.name}</Card.Title>
