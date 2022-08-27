@@ -29,7 +29,6 @@ class Home extends React.Component {
                     </Grid>
 
                     <Grid item xs={12} className="grid-carousel">
-                        {/* carousel that shows the images "Banner.png", "Logo.png", and "marcio.png", with the max width of 100% */}
                         <Carousel className="carousel" transitionDuration={1200} autoHeight>
                             <img src="Banner.png" alt="Cinema"></img>
                             <img src="banner.jpg" alt="Cinema"></img>

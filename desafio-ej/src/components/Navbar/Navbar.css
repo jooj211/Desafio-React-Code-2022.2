@@ -38,6 +38,7 @@ i {
     justify-content: center;
     width: 70vw;
     margin-right: 2rem;
+    margin-bottom: 0;
 }
 
 .nav-links {
@@ -49,6 +50,7 @@ i {
 
 .nav-links:hover {
     background-color: crimson;
+    color: white;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
