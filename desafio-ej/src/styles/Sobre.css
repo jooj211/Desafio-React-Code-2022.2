@@ -1,0 +1,45 @@
+.our-mission, .our-works, .join-us {
+    padding: 0 25px;
+}
+
+.grid-our-mission h1, .grid-our-works h1, .grid-join-us h1 {
+    text-align: left;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: auto;
+    /* or 122% */
+
+
+    background: linear-gradient(90.79deg, #0048FF 3.42%, #D6008D 82.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.grid-our-mission p, .grid-our-works p, .grid-join-us p {
+    font-family: 'GT Walsheim Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    /* or 180% */
+
+
+    color: #555555;
+}
+
+.grid-our-mission img, .grid-our-works img, .grid-join-us img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 15px 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-our-mission, .grid-our-works, .grid-join-us {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 125px;
+}

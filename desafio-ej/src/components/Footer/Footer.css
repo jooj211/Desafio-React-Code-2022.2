@@ -1,0 +1,46 @@
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-contents {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-contents span {
+    padding-bottom: 20px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-media i {
+    font-size: 25px;
+    padding: 0 15px;
+}
+
+/* when hovering over the facebook icon */
+.social-media a:hover i.fa-facebook {
+    color: #3b5998;
+}
+
+/* when hovering over the instagram icon */
+.social-media a:hover i.fa-instagram {
+    color: #e4405f;
+}
+
+/* when hovering over the linkedin icon */
+.social-media a:hover i.fa-linkedin {
+    color: #0077b5;
+}

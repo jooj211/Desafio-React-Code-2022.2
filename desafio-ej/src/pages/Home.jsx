@@ -14,16 +14,20 @@ class Home extends React.Component {
                     <Grid item xs={12} className="grid-intro">
                         <div className="intro">
                             <h1>Vendo a indústria do cinema de um jeito diferente</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant cras morbi hendrerit nunc vel sapien. In habitasse at diam suspendisse non vitae fermentum, pharetra arcu. Viverra a morbi ut donec in. Ac diam, at sed cras nisi. </p>
+                            <p>
+                                Na Cine Jr, você aprende como funciona a indústria do cinema, desde a produção até a distribuição, e ainda tem a oportunidade de participar de projetos reais, como a produção de um curta-metragem. Aqui, você pode participar de oficinas, cursos e workshops, além de ter acesso a conteúdos exclusivos sobre o universo cinematográfico.
+                            </p>
                         </div>
-                            <img src="intro.jpg" alt="Cinema"></img>
+                            <img src="Videographer-amico.png" alt="Cinema"></img>
                     </Grid>
 
                     <Grid item xs={12} className="grid-info">
-                        <img src="intro.jpg" alt="Cinema"></img>
+                        <img src="Sharing Ideas-bro.png" alt="Cinema"></img>
                         <div className="info">
                             <h1>Conheça o nosso projeto</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant cras morbi hendrerit nunc vel sapien. In habitasse at diam suspendisse non vitae fermentum, pharetra arcu. Viverra a morbi ut donec in. Ac diam, at sed cras nisi. </p>
+                            <p>
+                                A Cine Jr é uma organização sem fins lucrativos que, através de oficinas, cursos, workshops e projetos reais, busca formar jovens cineastas e profissionais da área audiovisual, além de promover a inclusão social por meio da produção de conteúdo audiovisual. Saiba mais clicando no botão abaixo!
+                            </p>
                             <a href="sobre"><button href="sobre" id="btn-about">Saiba Mais</button></a>
                         </div>
                     </Grid>
@@ -32,7 +36,7 @@ class Home extends React.Component {
                         <Carousel className="carousel" transitionDuration={1200} autoHeight>
                             <img src="Banner.png" alt="Cinema"></img>
                             <img src="banner.jpg" alt="Cinema"></img>
-                            <img src="intro.jpg" alt="Cinema"></img>
+                            <img src="Fall-Movie-Review.jpg" alt="Cinema"></img>
                         </Carousel>
                     </Grid>
 
