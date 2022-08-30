@@ -1,18 +1,27 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import '../styles/Members.css';
-import members from '../api.json';
 import Grid from "@material-ui/core/Grid";
+    
+const Members = () => {
+  const [members, setMembers] = React.useState([]);
 
-const MembersList = members.members;
-class Members extends React.Component {
-    render() {
+  React.useEffect(() => {
+    const url = "https://localhost:3000/members";
+    async function getMembers() {
+      const response = await fetch(url);
+      const data = await response.json();
+      setMembers(data);
+    }
+    getMembers();
+  }, []);
+
       return (
         <div className="member-container">
           <h1>Membros da Empresa</h1>
           <br/>
           <Grid container className="card-container">
-            {MembersList.map((item, index) => {
+            {members.map((item, index) => {
               return (
                 <Grid item xs={12} sm={6} md={4} lg={3}>
                   <Card className="member-card">
@@ -41,7 +50,6 @@ class Members extends React.Component {
           </Grid>
         </div>
       );
-    }
 }
 
 export default Members;
