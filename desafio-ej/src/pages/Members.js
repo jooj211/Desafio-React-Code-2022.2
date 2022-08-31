@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import MemberCard from '../components/MemberCard/MemberCard';
-/* import { api } from '../services/api'; */
-/* import MembersList from '../components/MembersList/MembersList'; */
 import '../styles/Members.css';
 import Grid from "@material-ui/core/Grid";
     
